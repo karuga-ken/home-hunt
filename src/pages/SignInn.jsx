@@ -1,7 +1,8 @@
 import React from 'react'
+import '../index.css'
 
 export default function SignInn() {
   return (
-    <div>SignInn</div>
+    <div>hello</div>
   )
 }
