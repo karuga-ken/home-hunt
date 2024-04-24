@@ -7,7 +7,8 @@ import SignUp from "./pages/SignUp"
 import SignInn from "./pages/SignInn";
 import Header from "./components/Header";
 import './index.css'
-
+import { ToastContainer, Zoom, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -23,6 +24,19 @@ function App() {
           <Route path="/sign-in" element={<SignInn/>}/>
         </Routes>
       </Router>
+      <ToastContainer
+        position="top-center"
+        autoClose={7000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        transition={Zoom}
+      />
     </>
   );
 }
